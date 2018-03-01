@@ -1,0 +1,15 @@
+https://www.youtube.com/watch?v=f1wnYdLEpgI
+git pull //MASTER: to sync remote master base, make sure your code is up to day
+git checkout -b my_cool_feature //MY_COOL_FEATURE: create a branch, and switch to new a new branch 'my_cool_feature'
+git commit -m 'test 1'  //MY_COOL_FEATURE: commit current branch
+git add index.html  //MY_COOL_FEATURE:
+git commit -m 'homepage commit' // MY_COOL_FEATURE:
+
+//To merge back into master
+git checkout master //MASTER:
+git pull //MASTER: make sure local master up to date with remote master
+git checkout my_cool_feature //MY_COOL_FEATURE: switch to branch
+git rebase master  //rebase, up-to-date master, current branch no conflict.
+git checkout master //MASTER:
+git rebase my_cool_feature //rebase master, against my feature branch --> This will move the branch to master base, set into as master base node.
+git push //MASTER: this will push the local master to REMOTE MASTER.
