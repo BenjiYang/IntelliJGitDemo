@@ -8,5 +8,7 @@ public class Main {
 	    System.out.println("From LOCAL my_cool_feature");
 
 	    //test1 commit my_cool_feature
+
+        //test2 commit my_cool_feature
     }
 }
